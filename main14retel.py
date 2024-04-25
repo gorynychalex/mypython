@@ -9,7 +9,8 @@ import re
 """
 
 number="+7(912)15-14-123"
-pattern = re.compile(r'(\+7|8).*?(\d{2,3}).*?(\d{2,3}).*?(\d{2}).*?(\d{2})')
+# pattern = re.compile(r'(\+7|8).*?(\d{2,3}).*?(\d{2,3}).*?(\d{2}).*?(\d{2})')
+pattern = re.compile(r'\+7|8)[\W\s-]*?(\d{2,3})[\W\s-]*?(\d{2,3})[\W\s-]*?(\d{2})[\W\s-]*?(\d{2,3}')
 
 if re.match(pattern, number):
     print("ДА")
