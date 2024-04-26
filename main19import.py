@@ -1,3 +1,3 @@
-import mypackage
+from mypackage import *
 
-print(mypackage.add(10,20))
+print(add(10,20))
